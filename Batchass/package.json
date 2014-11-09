@@ -1,0 +1,15 @@
+{
+  "name": "Batchass",
+  "version": "0.0.0",
+  "description": "Batchass",
+  "main": "app.js",
+  "author": {
+    "name": "Bruce",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*"
+  }
+}
