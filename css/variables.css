@@ -1,3 +1,6 @@
+body {
+  text-align: center;
+}
 /* ============
     Carousel
    ============ */
@@ -5,4 +8,84 @@
 .carousel-inner > .item > a > img {
     width: 70%;
     margin: auto;
+}
+
+
+/* ============
+    Sections
+   ============ */
+/*
+We have :
+#accueil
+#musique
+#videos
+#photos
+#live
+#contact
+*/
+
+/* accueil */
+.accueil-section {
+
+}
+.accueil-header {
+
+}
+.accueil-body {
+
+}
+
+/* musique */
+.musique-section {
+
+}
+.musique-header {
+
+}
+.musique-body {
+
+}
+
+/* videos */
+.videos-section {
+
+}
+.videos-header {
+
+}
+.videos-body {
+
+}
+
+/* photos */
+.photos-section {
+
+}
+.photos-header {
+
+}
+.photos-body {
+
+}
+
+/* live */
+.live-section {
+
+}
+.live-header {
+
+}
+.live-body {
+
+}
+
+/* contact */
+.contact-section {
+
+}
+.contact-header {
+
+}
+.contact-body {
+
 }
