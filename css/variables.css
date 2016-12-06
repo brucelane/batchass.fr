@@ -30,6 +30,10 @@ p.intro-primary {
   padding-top: 20px;
 }
 
+.img-responsive {
+    margin: 0 auto;
+}
+
 /* ============
     Carousel
    ============ */
@@ -133,7 +137,7 @@ section {
 }
 @media (min-width: 768px) {
   section {
-    padding-top: 250px;
+    padding-top: 120px;
   }
 }
 
