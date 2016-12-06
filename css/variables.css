@@ -1,6 +1,35 @@
 body {
   text-align: center;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
 }
+
+h1,h2,h3,h4 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.bold {
+ font-weight: bold;
+}
+
+hr {
+  padding: 0;
+  border: none;
+  border-top: solid 4px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+  color: #444;
+}
+
+p.intro-primary {
+  padding-top: 20px;
+}
+
 /* ============
     Carousel
    ============ */
@@ -10,12 +39,87 @@ body {
     margin: auto;
 }
 
+/* ==========
+    Btn
+   ========== */
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  position: relative;
+  top: 40px;
+  left: -4px;
+}
+@media (min-width: 768px) {
+  .btn-circle {
+    top: 75px;
+  }
+}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
 
+/* ============
+    NavBar
+   ============ */
+@media (min-width: 768px) {
+  .container>.navbar-header
+  {
+    width: 100%;
+  }
+}
+.navbar-header h1 a {
+  font-size: 50px;
+}
+.navbar-brand {
+  /*font-size: 0;
+  background: url(../images/header480x60.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;*/
+  display: inline-block;
+  width: 80%;
+  height: 40px;
+  margin: 5px;
+}
+
+.navbar-default .navbar-brand {
+  color: #9c28ff;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand
+  {
+    width: 100%;
+    /*height: 150px;*/
+    font-size: 50px;
+  }
+}
+
+.nav>li>a {
+  font-family: 'Orbitron', sans-serif;
+}
+.nav>li>a:hover {
+  background-color: #777;
+}
 /* ============
     Sections
    ============ */
 /*
 We have :
+#hero
 #accueil
 #musique
 #videos
@@ -24,9 +128,34 @@ We have :
 #contact
 */
 
+section {
+  padding-top: 70px;
+}
+@media (min-width: 768px) {
+  section {
+    padding-top: 250px;
+  }
+}
+
+/* hero */
+#hero {
+  top: 80px;
+  position: relative;
+  padding-top: 80px;
+}
+@media (min-width: 768px) {
+  #hero {
+    padding-top: 200px;
+  }
+}
+.hero-body {
+  background: url(../img/intro-bg.jpg) no-repeat top center scroll;
+  height: 600px;
+}
+
 /* accueil */
 .accueil-section {
-
+  margin-top: 80px;
 }
 .accueil-header {
 
@@ -55,6 +184,9 @@ We have :
 }
 .videos-body {
 
+}
+.videos-body .vendor {
+  margin: 20px;
 }
 
 /* photos */
@@ -88,4 +220,8 @@ We have :
 }
 .contact-body {
 
+}
+
+ul.banner-social-buttons {
+  padding-left: 0;
 }
