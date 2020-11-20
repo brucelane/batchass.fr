@@ -1,0 +1,22 @@
+.batchass {
+    display: flex;
+    flex-wrap: wrap;
+  align-content: flex-start
+  }
+
+  body {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+  }
+  .nav>li>a {
+    font-family: 'Orbitron', sans-serif;
+  }
+  section {
+      /*padding-top: 90px;*/
+      display: flex;
+      align-content: center;
+  }
+  #carouselFade {
+    height:800px;
+    overflow: hidden;
+  }
