@@ -110,27 +110,27 @@
 	gl_FragColor = vec4(col,1.);
 }
       </script>
-      <script src="js/shader-web-background.min.js"></script>
-      <script>
+    <script src="js/shader-web-background.min.js"></script>
+    <script>
         // start in the center
         var mouseX = window.innerWidth / 2;
         var mouseY = window.innerHeight / 2;
-    
+
         document.addEventListener("mousemove", (event) => {
-           // shader gl_FragCoord coordinates start in the middle of the pixel
-           // so we need to accommodate for that by removing half.
-           // also vertical coordinate needs to be flipped.
-           mouseX = event.offsetX - .5;
-           mouseY = window.innerHeight - event.offsetY - .5;
+            // shader gl_FragCoord coordinates start in the middle of the pixel
+            // so we need to accommodate for that by removing half.
+            // also vertical coordinate needs to be flipped.
+            mouseX = event.offsetX - .5;
+            mouseY = window.innerHeight - event.offsetY - .5;
         });
-    
+
         shaderWebBackground.shadeOnLoad({
-          imageShader: "image-shader",
-          uniforms: {
-            "iMouse": (gl, loc) => gl.uniform2f(loc, mouseX, mouseY)
-          }
+            imageShader: "image-shader",
+            uniforms: {
+                "iMouse": (gl, loc) => gl.uniform2f(loc, mouseX, mouseY)
+            }
         });
-      </script>
+    </script>
 
 </head>
 
@@ -257,7 +257,7 @@
     <!-- Videos Section-->
 
     <section id="videos" class="videos-section">
-       
+
         <div class="container">
             <h2>Videos</h2>
             <!--<div class="card" style="width: 640px;">-->
@@ -278,13 +278,20 @@
         <div class="accueil-body container">
             <div class="feature col-lg-12">
                 <h3>
-                    <span class="fa fa-2x fa-cubes"></span>Electro-Visuel</h3>
+                    <span class="fa fa-2x fa-cubes"></span>Electro-Visuel
+                </h3>
                 <p>Combinaison d’éléments visuels et de musique originale <br />
                     avec projection-manipulation-animation de vidéos,<br />
                     photos, dessins originaux<br />
                     et de création musicale par le biais de<br />
                     machines et de voix travaillées et improvisées,<br />
                     sur fond d’électro-drum&bass</p>
+                <p>Combination of visuals and original music.<br />
+                    Animation of
+                    photos, original drawings, shader live-coding.<br />
+                    Musical creation with
+                    machines, bass, worked and improvised voices,
+                    on an electro-drum & bass background</p>
                 <p>Membres : </p>
                 <dl class="members-list">
                     <dt>Bruce</dt>
@@ -324,9 +331,39 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
+                        <a href="https://mapandfold.com/" target="_blank">
+                            <img src="assets/live/mapnfold2021.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <p class="card-text">Map & Fold - 13 novembre 2021<br />Tübingen (Schlachthaus)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card" style="width: 28rem;">
+                        <a href="https://www.facebook.com/events/528974095073807/" target="_blank">
+                            <img src="assets/live/lpm2021.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <p class="card-text">Live Performers Meeting - 4 août 2021<br />Apulia (Fattizze d'Arneo)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card" style="width: 28rem;">
+                        <a href="https://www.facebook.com/events/344292120552004/?active_tab=discussion" target="_blank">
+                            <img src="assets/live/altherax2021.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <p class="card-text">Altherax - 30 juillet 2021<br />Nice (Altherax)</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/events/399094597682787/" target="_blank">
-                            <img
-                                src="assets/live/turbulens2019.jpg" class="card-img-top" alt="..."></a>
+                            <img src="assets/live/turbulens2019.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">Turbulens - 16 novembre 2019<br />Nice (au 109, le Hublot)</p>
                         </div>
@@ -335,8 +372,7 @@
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/events/595727994292570/" target="_blank">
-                            <img src="assets/live/cookie2019.jpg"
-                                class="card-img-top" alt="..."></a>
+                            <img src="assets/live/cookie2019.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">Cookie Party - 26 octobre 2019<br />Paris (au Landy Sauvage,
                                 Saint-Denis)</p>
@@ -346,10 +382,8 @@
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/LPM.LivePerformersMeeting" target="_blank">
-                            <img src="assets/live/lpm2019.jpg"
-                                class="card-img-top" alt="...">
-                            <img src="assets/live/collector.jpg"
-                                class="card-img-top" alt="..."></a>
+                            <img src="assets/live/lpm2019.jpg" class="card-img-top" alt="...">
+                            <img src="assets/live/collector.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">Live Performers Meeting - 4 mai 2019<br />Roma (Mattatoio)</p>
                         </div>
@@ -358,10 +392,8 @@
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/events/2030536697003324/" target="_blank">
-                            <img src="assets/live/altherax.jpg"
-                                class="card-img-top" alt="...">
-                                <img src="assets/live/vvj.jpg"
-                                class="card-img-top" alt="..."></a>
+                            <img src="assets/live/altherax.jpg" class="card-img-top" alt="...">
+                            <img src="assets/live/vvj.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">Veni Vidi VJ - 2 décembre 2018<br />Nice (Altherax)</p>
                         </div>
@@ -370,9 +402,8 @@
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/events/357941674735769/" target="_blank">
-                            
-                                <img src="assets/live/experiencevj.jpg"
-                                class="card-img-top" alt="..."></a>
+
+                            <img src="assets/live/experiencevj.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">Experience VJ - 1 décembre 2018<br />
                                 Nice (La Zonmé)</p>
@@ -382,8 +413,7 @@
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/LPM.LivePerformersMeeting" target="_blank">
-                            <img src="assets/live/lpm2016.jpg"
-                                class="card-img-top" alt="..."></a>
+                            <img src="assets/live/lpm2016.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">Live Performers Meeting - 14 mai 2016<br />
                                 Amsterdam (Tolhuistuin)</p>
@@ -393,20 +423,18 @@
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/events/1680547815526320/" target="_blank">
-                            <img src="assets/carousel/4.jpg"
-                                class="card-img-top" alt="..."></a>
+                            <img src="assets/carousel/4.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">Villa Nachttanz - 18 mars 2016<br />
-                        Heidelberg (Germany)</p>
+                                Heidelberg (Germany)</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/events/631133310362564/" target="_blank">
-                            
-                                <img src="assets/live/paseze.jpg"
-                                class="card-img-top" alt="..."></a>
+
+                            <img src="assets/live/paseze.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">Music Station - 22 janvier 2016<br />
                                 Eze (Music Station)</p>
@@ -416,9 +444,8 @@
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="http://www.cinemabrut.com/" target="_blank">
-                            
-                                <img src="assets/carousel/2.jpg"
-                                class="card-img-top" alt="..."></a>
+
+                            <img src="assets/carousel/2.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">CinemaBrut - 11 juillet 2015<br />
                                 Mouans-sartoux (Chateau)</p>
@@ -428,8 +455,7 @@
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/LPM.LivePerformersMeeting" target="_blank">
-                            <img src="assets/live/lpm2012.png"
-                                class="card-img-top" alt="..."></a>
+                            <img src="assets/live/lpm2012.png" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">Live Performers Meeting - 29 mai 2015<br />
                                 Roma (LPM)</p>
@@ -439,9 +465,8 @@
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/events/389634217871442/" target="_blank">
-                                <img src="assets/live/artemysbatchassgunston.jpg"
-                                class="card-img-top" alt="...">
-                            </a>
+                            <img src="assets/live/artemysbatchassgunston.jpg" class="card-img-top" alt="...">
+                        </a>
                         <div class="card-body">
                             <p class="card-text">Hacienda - 23 mai 2015<br />
                                 Antibes</p>
@@ -451,9 +476,8 @@
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
                         <a href="https://www.facebook.com/events/1516747281937724/" target="_blank">
-                            
-                                <img src="assets/live/sda2015.jpg"
-                                class="card-img-top" alt="..."></a>
+
+                            <img src="assets/live/sda2015.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <p class="card-text">Sophia Digital Art - 4 avril 2015<br />
                                 Valbonne (Pré des arts)</p>
@@ -462,20 +486,18 @@
                 </div>
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
-                      
-                                <img src="assets/live/vjlondon.jpg"
-                                class="card-img-top" alt="...">
+
+                        <img src="assets/live/vjlondon.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">VJ London - 4 fevrier 2015<br />
                                 London (Juno)</p>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
-                      
-                                <img src="assets/live/kkf.jpg"
-                                class="card-img-top" alt="...">
+
+                        <img src="assets/live/kkf.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">KKF - 2 mars 2013<br />
                                 Nice </p>
@@ -484,9 +506,8 @@
                 </div>
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
-                      
-                                <img src="assets/live/selectadjs.jpg"
-                                class="card-img-top" alt="...">
+
+                        <img src="assets/live/selectadjs.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Selecta DJs - 23 février 2013<br />
                                 Valbonne (Pré des arts) </p>
@@ -495,9 +516,8 @@
                 </div>
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
-                      
-                                <img src="assets/live/reciprock2013.jpg"
-                                class="card-img-top" alt="...">
+
+                        <img src="assets/live/reciprock2013.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">reciprock - 27 juillet 2013<br />
                                 Cipières </p>
@@ -506,9 +526,8 @@
                 </div>
                 <div class="col-sm">
                     <div class="card" style="width: 28rem;">
-                      
-                                <img src="assets/live/dimancherouge.jpg"
-                                class="card-img-top" alt="...">
+
+                        <img src="assets/live/dimancherouge.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Dimanche Rouge - 16 octobre 2011<br />
                                 Paris (Petit Bain)</p>
@@ -594,7 +613,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; <a href="https://sophiadigitalart.com/" target="_blank">Bruce Lane</a> 2020
+            <p>Copyright &copy; <a href="https://sophiadigitalart.com/" target="_blank">Bruce Lane</a> 2021
             </p>
         </div>
     </footer>
