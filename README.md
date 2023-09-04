@@ -2,3 +2,5 @@
 Official website
 Hosted as an Azure SWA https://black-water-09e4d2c03.azurestaticapps.net/
 Deployed to https://www.batchass.fr/
+
+690a9b purple
