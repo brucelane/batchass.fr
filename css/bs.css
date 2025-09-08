@@ -17,6 +17,20 @@
       align-content: center;
   }
   #carouselFade {
-    height:800px;
-    overflow: hidden;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+/* Ensure carousel images fill width and scale height proportionally */
+.carousel-inner img {
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
