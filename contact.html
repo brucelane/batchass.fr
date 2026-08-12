@@ -169,7 +169,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/photos.html">Photos</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/videos.html">Videos</a>
                 </li>
                 <li class="nav-item">
@@ -284,6 +284,29 @@
         });
         document.querySelectorAll('iframe').forEach((iframe) => {
             if (!iframe.hasAttribute('loading')) iframe.setAttribute('loading', 'lazy');
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPath = window.location.pathname.toLowerCase();
+            const normalizedCurrent = currentPath === '/' ? '/index.html' : currentPath;
+
+            document.querySelectorAll('.nav-item').forEach((item) => {
+                const link = item.querySelector('.nav-link');
+                if (!link) return;
+
+                const href = new URL(link.href, window.location.href).pathname.toLowerCase();
+                const isCurrent = href === normalizedCurrent ||
+                    (normalizedCurrent === '/index.html' && (href === '/' || href === '/index.html'));
+
+                item.classList.toggle('active', isCurrent);
+                if (isCurrent) {
+                    link.setAttribute('aria-current', 'page');
+                } else {
+                    link.removeAttribute('aria-current');
+                }
+            });
         });
     </script>
 
