@@ -80,10 +80,10 @@
 
     <!-- .navbar -->
 <hr />
-    <section id="carousel" class=" containe">
+    <section id="carousel" >
         <!-- .photos-header
         <div class="photos-body container"> -->
-        <div id="carouselFade" class="carousel slide carousel-fade mt-5 w-100" data-ride="carousel">
+        <div id="carouselFade" class="carousel slide carousel-fade mt-5 w-100" data-ride="carousel" data-interval="3000" data-pause="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/carousel/0.jpg" class="w-100 img-fluid" alt="carousel">
@@ -220,6 +220,11 @@
 
     <script>
         document.querySelectorAll('img').forEach((img) => {
+            if (img.closest('#carouselFade')) {
+                if (!img.hasAttribute('loading')) img.setAttribute('loading', 'eager');
+                if (!img.hasAttribute('decoding')) img.setAttribute('decoding', 'async');
+                return;
+            }
             if (!img.hasAttribute('loading')) img.setAttribute('loading', 'lazy');
             if (!img.hasAttribute('decoding')) img.setAttribute('decoding', 'async');
         });
@@ -230,6 +235,37 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.getElementById('carouselFade');
+            if (!carousel) return;
+
+            const slides = Array.from(carousel.querySelectorAll('.carousel-item'));
+            const preloadImage = (src) => {
+                if (!src) return;
+                const img = new Image();
+                img.src = src;
+                img.loading = 'eager';
+                img.decoding = 'async';
+            };
+
+            const preloadNextSlide = () => {
+                const currentIndex = slides.findIndex((slide) => slide.classList.contains('active'));
+                const nextIndex = (currentIndex + 1 + slides.length) % slides.length;
+                const nextImage = slides[nextIndex]?.querySelector('img');
+                if (nextImage) {
+                    preloadImage(nextImage.getAttribute('src'));
+                }
+            };
+
+            slides.forEach((slide) => {
+                const img = slide.querySelector('img');
+                if (img && img.getAttribute('src')) {
+                    preloadImage(img.getAttribute('src'));
+                }
+            });
+
+            preloadNextSlide();
+            carousel.addEventListener('slid.bs.carousel', preloadNextSlide);
+
             const currentPath = window.location.pathname.toLowerCase();
             const normalizedCurrent = currentPath === '/' ? '/index.html' : currentPath;
 
