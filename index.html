@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Orbitron" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ofz3vzr.css">
-     <script type="x-shader/x-fragment" id="image-shader">
+     <!-- <script type="x-shader/x-fragment" id="image-shader">
         #ifdef GL_ES
         precision highp float;
         #endif
@@ -136,7 +136,7 @@
                 "iMouse": (gl, loc) => gl.uniform2f(loc, mouseX, mouseY)
             }
         });
-    </script>
+    </script> -->
     <style>
         /* body {
             background: linear-gradient(135deg, #06040c 0%, #151125 50%, #0a0912 100%);
@@ -221,7 +221,69 @@
         <!-- .accueil-body -->
     </section>
     <!-- #accueil -->
+<canvas id="canvas" width="800" height="600"></canvas>
 
+  <script>
+    const CANVAS_W = 800, CANVAS_H = 600;
+    const IMG_W = 1280, IMG_H = 720;
+    const DELAY_MS = 50;
+    const FRAME_COUNT = 201;
+    const FOLDER = "beadsrandom";
+
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    //const statusEl = document.getElementById("status");
+
+    const offsetX = (CANVAS_W - IMG_W) / 2;
+    const offsetY = (CANVAS_H - IMG_H) / 2;
+
+    function shuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function loadImage(src) {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = reject;
+        img.src = src;
+      });
+    }
+
+    async function main() {
+      const indices = shuffle(Array.from({ length: FRAME_COUNT }, (_, i) => i + 1));
+
+      const sources = indices.map(
+        (n) => `${FOLDER}/particle_${String(n).padStart(3, "0")}.png`
+      );
+
+      const images = await Promise.all(sources.map(loadImage));
+
+      //statusEl.textContent = `Frame 0 / ${FRAME_COUNT}`;
+
+      let i = 0;
+      function step() {
+        if (i >= images.length) {
+          //statusEl.textContent = `Done — ${FRAME_COUNT} / ${FRAME_COUNT}`;
+          return;
+        }
+        ctx.drawImage(images[i], offsetX, offsetY, IMG_W, IMG_H);
+        i++;
+        //statusEl.textContent = `Frame ${i} / ${FRAME_COUNT}`;
+        setTimeout(step, DELAY_MS);
+      }
+      step();
+    }
+
+    main().catch((err) => {
+      //statusEl.textContent = "Error loading images: " + err;
+      console.error(err);
+    });
+  </script>
   
     <hr />
 
