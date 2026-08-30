@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!-- &nbsp; - Version 6.8.12 -->
+<!-- &nbsp; - Version 6.8.12 -->
+
 <head>
 
     <meta charset="utf-8">
@@ -28,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Orbitron" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/ofz3vzr.css">
-     <script type="x-shader/x-fragment" id="image-shader">
+    <script type="x-shader/x-fragment" id="image-shader">
         #ifdef GL_ES
         precision highp float;
         #endif
@@ -142,9 +143,11 @@
             background: linear-gradient(135deg, #06040c 0%, #151125 50%, #0a0912 100%);
             background-attachment: fixed;
         } */
-        img, iframe {
+        img,
+        iframe {
             max-width: 100%;
         }
+
         img {
             height: auto;
         }
@@ -185,7 +188,11 @@
         </div>
     </nav>
     <!-- .navbar -->
- <hr /><hr /><hr /><hr /><hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
     <!-- Musique Section -->
     <section id="musique" class="musique-section">
         <!--<div class="musique-header container">
@@ -205,10 +212,11 @@
                     <div class="card" style="width: 28rem;">
 
                         <div class="card-body">
-                            <iframe style="border: 0; width: 350px; height: 442px;"
-                                src="https://bandcamp.com/EmbeddedPlayer/track=1122910683/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-                                seamless><a href="https://batchass.bandcamp.com/track/ambivalence">Ambivalence de
-                                    batchass</a></iframe>
+                            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                                src="https://open.spotify.com/embed/track/3Nkce9KdfHi8Bb2qimh1lB?utm_source=generator&si=c18abd61a40d4b13"
+                                width="100%" height="352" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
