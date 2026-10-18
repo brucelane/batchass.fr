@@ -151,6 +151,33 @@
         img {
             height: auto;
         }
+
+        .live-card {
+            background: rgba(20, 17, 37, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            overflow: hidden;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .live-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .live-card .card-img-top {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        .live-card .card-title {
+            margin-bottom: .5rem;
+        }
+
+        .live-date {
+            color: #f39c12;
+            font-weight: 700;
+        }
     </style>
 
 </head>
@@ -202,342 +229,302 @@
         <div class="container">
             <h2>Live</h2>
             <div class="row">
-                <div class="row">
-                    <div class="col-sm">
-                        <div class="card" style="width: 28rem;">
-                            <a href="https://www.facebook.com/avjamberlin" target="_blank">
-                                <img src="assets/live/altherax2021.jpg" class="card-img-top" alt="AV Jam 2026"></a>
-                            <div class="card-body">
-                                <p class="card-text">AV Jam - 30 octobre 2026<br />MotionLab.Berlin (Berlin, Germany)
-                                </p>
-                            </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/avjamberlin" target="_blank" rel="noopener">
+                            <img src="assets/live/altherax2021.jpg" class="card-img-top" alt="AV Jam 2026">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">AV Jam</h5>
+                            <p class="card-text"><span class="live-date">30 octobre 2026</span><br />MotionLab.Berlin (Berlin, Germany)</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://liveperformersmeeting.net/editions/2026-rome/program/detail/batchass-live-av/"
-                            target="_blank">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://liveperformersmeeting.net/editions/2026-rome/program/detail/batchass-live-av/" target="_blank" rel="noopener">
                             <img src="assets/live/lpm2026.jpg" class="card-img-top" alt="Brancaleone (Roma, Italy)">
                         </a>
                         <div class="card-body">
-                            <p class="card-text">Live Performers Meeting - 24 octobre 2026<br />Media Art Museum -
-                                Brancaleone (Roma, Italy)</p>
+                            <h5 class="card-title">Live Performers Meeting</h5>
+                            <p class="card-text"><span class="live-date">24 octobre 2026</span><br />Media Art Museum - Brancaleone (Roma, Italy)</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/2019412478680257/" target="_blank">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/2019412478680257/" target="_blank" rel="noopener">
                             <img src="assets/live/darkpaca2026.jpg" class="card-img-top" alt="Dark PACA">
                         </a>
                         <div class="card-body">
-                            <p class="card-text">Dark PACA - 12 septembre 2026<br />Altherax (Nice, France)</p>
+                            <h5 class="card-title">Dark PACA</h5>
+                            <p class="card-text"><span class="live-date">12 septembre 2026</span><br />Altherax (Nice, France)</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
                         <img src="assets/live/ventabringue2025.jpg" class="card-img-top" alt="Ventabringue 2025">
                         <div class="card-body">
-                            <p class="card-text">Ventabringue - 10 novembre 2025<br />(Ventabrun, France)</p>
+                            <h5 class="card-title">Ventabringue</h5>
+                            <p class="card-text"><span class="live-date">10 novembre 2025</span><br />Ventabrun, France</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.youtube.com/watch?v=Q9lf-rmnCNQ" target="_blank">
-                            <img src="assets/live/avjam2025.jpg" class="card-img-top" alt="AV Jam 2025"></a>
-                        <div class="card-body">
-                            <p class="card-text">AV Jam - 31 octobre 2025<br />MotionLab.Berlin (Berlin, Germany)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/s/electro-river-festival/745447631329195/"
-                            target="_blank">
-                            <img src="assets/live/ElectroRiver.jpg" class="card-img-top"
-                                alt="ElectroRiver Festival"></a>
-                        <div class="card-body">
-                            <p class="card-text">ElectroRiver Festival - 12 juillet 2025<br />Rouges Gorges (Guillaumes,
-                                France)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/828875842324494" target="_blank">
-                            <img src="assets/live/avjam.jpg" class="card-img-top" alt="AV Jam"></a>
-                        <div class="card-body">
-                            <p class="card-text">AV Jam - 24 novembre 2023<br />MotionLab.Berlin (Berlin, Germany)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/911263156179224" target="_blank">
-                            <img src="assets/live/industrialfestival2022.jpg" class="card-img-top"
-                                alt="Industrial Festival 2022"></a>
-                        <div class="card-body">
-                            <p class="card-text">Industrial Festival- 24 septembre 2022<br />MJC Picaud (Cannes, France)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://liveperformersmeeting.net/editions/2022-rome/program/detail/batchass-electro-visual/"
-                            target="_blank">
-                            <img src="assets/live/lpm2022.jpg" class="card-img-top"
-                                alt="Live Performers Meeting 2022"></a>
-                        <div class="card-body">
-                            <p class="card-text">Live Performers Meeting - 11 juin 2022<br />Roma (LPM)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://mapandfold.com/" target="_blank">
-                            <img src="assets/live/mapnfold2021.jpg" class="card-img-top" alt="Map & Fold 2021"></a>
-                        <div class="card-body">
-                            <p class="card-text">Map & Fold - 23 avril 2022<br />Schlachthaus (Tübingen, Germany)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/528974095073807/" target="_blank">
-                            <img src="assets/live/lpm2021.jpg" class="card-img-top"
-                                alt="Live Performers Meeting 2021"></a>
-                        <div class="card-body">
-                            <p class="card-text">Live Performers Meeting - 4 août 2021<br />Apulia (Fattizze d'Arneo)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/344292120552004/?active_tab=discussion"
-                            target="_blank">
-                            <img src="assets/live/altherax2021.jpg" class="card-img-top" alt="Altherax 2021"></a>
-                        <div class="card-body">
-                            <p class="card-text">Altherax - 30 juillet 2021<br />Nice (Altherax)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/399094597682787/" target="_blank">
-                            <img src="assets/live/turbulens2019.jpg" class="card-img-top" alt="Turbulens"></a>
-                        <div class="card-body">
-                            <p class="card-text">Turbulens - 16 novembre 2019<br />Nice (au 109, le Hublot)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/595727994292570/" target="_blank">
-                            <img src="assets/live/cookie2019.jpg" class="card-img-top" alt="Cookie Party"></a>
-                        <div class="card-body">
-                            <p class="card-text">Cookie Party - 26 octobre 2019<br />Paris (au Landy Sauvage,
-                                Saint-Denis)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/2030536697003324/" target="_blank">
-                            <img src="assets/live/altherax.jpg" class="card-img-top" alt="altherax">
-                            <img src="assets/live/vvj.jpg" class="card-img-top" alt="Veni Vidi VJ"></a>
-                        <div class="card-body">
-                            <p class="card-text">Veni Vidi VJ - 2 décembre 2018<br />Nice (Altherax)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/357941674735769/" target="_blank">
-                            <img src="assets/live/experiencevj.jpg" class="card-img-top" alt="Experience VJ"></a>
-                        <div class="card-body">
-                            <p class="card-text">Experience VJ - 1 décembre 2018<br />
-                                Nice (La Zonmé)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/LPM.LivePerformersMeeting" target="_blank">
-                            <img src="assets/live/lpm2016.jpg" class="card-img-top"
-                                alt="Live Performers Meeting 2016"></a>
-                        <div class="card-body">
-                            <p class="card-text">Live Performers Meeting - 14 mai 2016<br />
-                                Amsterdam (Tolhuistuin)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/1680547815526320/" target="_blank">
-                            <img src="assets/carousel/4.jpg" class="card-img-top" alt="Villa Nachttanz"></a>
-                        <div class="card-body">
-                            <p class="card-text">Villa Nachttanz - 18 mars 2016<br />
-                                Heidelberg (Germany)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/631133310362564/" target="_blank">
-                            <img src="assets/live/paseze.jpg" class="card-img-top" alt="Music Station"></a>
-                        <div class="card-body">
-                            <p class="card-text">Music Station - 22 janvier 2016<br />
-                                Eze (Music Station)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="http://www.cinemabrut.com/" target="_blank">
-                            <img src="assets/carousel/2.jpg" class="card-img-top" alt="CinemaBrut"></a>
-                        <div class="card-body">
-                            <p class="card-text">CinemaBrut - 11 juillet 2015<br />
-                                Mouans-sartoux (Chateau)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/LPM.LivePerformersMeeting" target="_blank">
-                            <img src="assets/live/lpm2012.png" class="card-img-top"
-                                alt="Live Performers Meeting 2012"></a>
-                        <div class="card-body">
-                            <p class="card-text">Live Performers Meeting - 29 mai 2015<br />
-                                Roma (LPM)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/389634217871442/" target="_blank">
-                            <img src="assets/live/artemysbatchassgunston.jpg" class="card-img-top"
-                                alt="artemys batchass gunston">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.youtube.com/watch?v=Q9lf-rmnCNQ" target="_blank" rel="noopener">
+                            <img src="assets/live/avjam2025.jpg" class="card-img-top" alt="AV Jam 2025">
                         </a>
                         <div class="card-body">
-                            <p class="card-text">Hacienda - 23 mai 2015<br />
-                                Antibes</p>
+                            <h5 class="card-title">AV Jam</h5>
+                            <p class="card-text"><span class="live-date">31 octobre 2025</span><br />MotionLab.Berlin (Berlin, Germany)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <a href="https://www.facebook.com/events/1516747281937724/" target="_blank">
-
-                            <img src="assets/live/sda2015.jpg" class="card-img-top" alt="Sophia Digital Art"></a>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/s/electro-river-festival/745447631329195/" target="_blank" rel="noopener">
+                            <img src="assets/live/ElectroRiver.jpg" class="card-img-top" alt="ElectroRiver Festival">
+                        </a>
                         <div class="card-body">
-                            <p class="card-text">Sophia Digital Art - 4 avril 2015<br />
-                                Valbonne (Pré des arts)</p>
+                            <h5 class="card-title">ElectroRiver Festival</h5>
+                            <p class="card-text"><span class="live-date">12 juillet 2025</span><br />Rouges Gorges (Guillaumes, France)</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/828875842324494" target="_blank" rel="noopener">
+                            <img src="assets/live/avjam.jpg" class="card-img-top" alt="AV Jam">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">AV Jam</h5>
+                            <p class="card-text"><span class="live-date">24 novembre 2023</span><br />MotionLab.Berlin (Berlin, Germany)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/911263156179224" target="_blank" rel="noopener">
+                            <img src="assets/live/industrialfestival2022.jpg" class="card-img-top" alt="Industrial Festival 2022">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Industrial Festival</h5>
+                            <p class="card-text"><span class="live-date">24 septembre 2022</span><br />MJC Picaud (Cannes, France)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://liveperformersmeeting.net/editions/2022-rome/program/detail/batchass-electro-visual/" target="_blank" rel="noopener">
+                            <img src="assets/live/lpm2022.jpg" class="card-img-top" alt="Live Performers Meeting 2022">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Live Performers Meeting</h5>
+                            <p class="card-text"><span class="live-date">11 juin 2022</span><br />Roma (LPM)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://mapandfold.com/" target="_blank" rel="noopener">
+                            <img src="assets/live/mapnfold2021.jpg" class="card-img-top" alt="Map &amp; Fold 2021">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Map &amp; Fold</h5>
+                            <p class="card-text"><span class="live-date">23 avril 2022</span><br />Schlachthaus (Tübingen, Germany)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/528974095073807/" target="_blank" rel="noopener">
+                            <img src="assets/live/lpm2021.jpg" class="card-img-top" alt="Live Performers Meeting 2021">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Live Performers Meeting</h5>
+                            <p class="card-text"><span class="live-date">4 août 2021</span><br />Apulia (Fattizze d&#x27;Arneo)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/344292120552004/?active_tab=discussion" target="_blank" rel="noopener">
+                            <img src="assets/live/altherax2021.jpg" class="card-img-top" alt="Altherax 2021">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Altherax</h5>
+                            <p class="card-text"><span class="live-date">30 juillet 2021</span><br />Nice (Altherax)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/399094597682787/" target="_blank" rel="noopener">
+                            <img src="assets/live/turbulens2019.jpg" class="card-img-top" alt="Turbulens">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Turbulens</h5>
+                            <p class="card-text"><span class="live-date">16 novembre 2019</span><br />Nice (au 109, le Hublot)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/595727994292570/" target="_blank" rel="noopener">
+                            <img src="assets/live/cookie2019.jpg" class="card-img-top" alt="Cookie Party">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Cookie Party</h5>
+                            <p class="card-text"><span class="live-date">26 octobre 2019</span><br />Paris (au Landy Sauvage, Saint-Denis)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/2030536697003324/" target="_blank" rel="noopener">
+                            <img src="assets/live/vvj.jpg" class="card-img-top" alt="Veni Vidi VJ">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Veni Vidi VJ</h5>
+                            <p class="card-text"><span class="live-date">2 décembre 2018</span><br />Nice (Altherax)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/357941674735769/" target="_blank" rel="noopener">
+                            <img src="assets/live/experiencevj.jpg" class="card-img-top" alt="Experience VJ">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Experience VJ</h5>
+                            <p class="card-text"><span class="live-date">1 décembre 2018</span><br />Nice (La Zonmé)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/LPM.LivePerformersMeeting" target="_blank" rel="noopener">
+                            <img src="assets/live/lpm2016.jpg" class="card-img-top" alt="Live Performers Meeting 2016">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Live Performers Meeting</h5>
+                            <p class="card-text"><span class="live-date">14 mai 2016</span><br />Amsterdam (Tolhuistuin)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/1680547815526320/" target="_blank" rel="noopener">
+                            <img src="assets/carousel/4.jpg" class="card-img-top" alt="Villa Nachttanz">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Villa Nachttanz</h5>
+                            <p class="card-text"><span class="live-date">18 mars 2016</span><br />Heidelberg (Germany)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/631133310362564/" target="_blank" rel="noopener">
+                            <img src="assets/live/paseze.jpg" class="card-img-top" alt="Music Station">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Music Station</h5>
+                            <p class="card-text"><span class="live-date">22 janvier 2016</span><br />Eze (Music Station)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="http://www.cinemabrut.com/" target="_blank" rel="noopener">
+                            <img src="assets/carousel/2.jpg" class="card-img-top" alt="CinemaBrut">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">CinemaBrut</h5>
+                            <p class="card-text"><span class="live-date">11 juillet 2015</span><br />Mouans-Sartoux (Château)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/LPM.LivePerformersMeeting" target="_blank" rel="noopener">
+                            <img src="assets/live/lpm2012.png" class="card-img-top" alt="Live Performers Meeting 2012">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Live Performers Meeting</h5>
+                            <p class="card-text"><span class="live-date">29 mai 2015</span><br />Roma (LPM)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/389634217871442/" target="_blank" rel="noopener">
+                            <img src="assets/live/artemysbatchassgunston.jpg" class="card-img-top" alt="artemys batchass gunston">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Hacienda</h5>
+                            <p class="card-text"><span class="live-date">23 mai 2015</span><br />Antibes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <a href="https://www.facebook.com/events/1516747281937724/" target="_blank" rel="noopener">
+                            <img src="assets/live/sda2015.jpg" class="card-img-top" alt="Sophia Digital Art">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Sophia Digital Art</h5>
+                            <p class="card-text"><span class="live-date">4 avril 2015</span><br />Valbonne (Pré des arts)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
                         <img src="assets/live/vjlondon.jpg" class="card-img-top" alt="VJ London">
                         <div class="card-body">
-                            <p class="card-text">VJ London - 4 fevrier 2015<br />
-                                London (Juno)</p>
+                            <h5 class="card-title">VJ London</h5>
+                            <p class="card-text"><span class="live-date">4 février 2015</span><br />London (Juno)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <img src="assets/live/kkf.jpg" class="card-img-top" alt="KKF">
-                        <div class="card-body">
-                            <p class="card-text">KKF - 2 mars 2013<br />
-                                Nice </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                        <img src="assets/live/selectadjs.jpg" class="card-img-top" alt="Selecta DJs">
-                        <div class="card-body">
-                            <p class="card-text">Selecta DJs - 23 février 2013<br />
-                                Valbonne (Pré des arts) </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
                         <img src="assets/live/reciprock2013.jpg" class="card-img-top" alt="reciprock">
                         <div class="card-body">
-                            <p class="card-text">reciprock - 27 juillet 2013<br />
-                                Cipières </p>
+                            <h5 class="card-title">reciprock</h5>
+                            <p class="card-text"><span class="live-date">27 juillet 2013</span><br />Cipières</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <img src="assets/live/kkf.jpg" class="card-img-top" alt="KKF">
+                        <div class="card-body">
+                            <h5 class="card-title">KKF</h5>
+                            <p class="card-text"><span class="live-date">2 mars 2013</span><br />Nice</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
+                        <img src="assets/live/selectadjs.jpg" class="card-img-top" alt="Selecta DJs">
+                        <div class="card-body">
+                            <h5 class="card-title">Selecta DJs</h5>
+                            <p class="card-text"><span class="live-date">23 février 2013</span><br />Valbonne (Pré des arts)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card live-card h-100">
                         <img src="assets/live/dimancherouge.jpg" class="card-img-top" alt="Dimanche Rouge">
                         <div class="card-body">
-                            <p class="card-text">Dimanche Rouge - 16 octobre 2011<br />
-                                Paris (Petit Bain)</p>
+                            <h5 class="card-title">Dimanche Rouge</h5>
+                            <p class="card-text"><span class="live-date">16 octobre 2011</span><br />Paris (Petit Bain)</p>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-sm">
-                    <div class="card" style="width: 28rem;">
-                            <img src="assets/live/afficheBatchass14juin2014.jpg"
-                                class="card-img-top" alt="carousel">
-                        <div class="card-body">
-                            <p class="card-text">Routes Productions - 14 juin 2014<br />
-                                Antibes (Hacienda)</p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
 
