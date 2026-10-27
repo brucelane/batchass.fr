@@ -137,18 +137,6 @@
             }
         });
     </script>
-    <style>
-        /* body {
-            background: linear-gradient(135deg, #06040c 0%, #151125 50%, #0a0912 100%);
-            background-attachment: fixed;
-        } */
-        img, iframe {
-            max-width: 100%;
-        }
-        img {
-            height: auto;
-        }
-    </style>
 
 </head>
 
@@ -179,10 +167,7 @@
                     <a class="nav-link" href="/live.html">Live</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/presskit.html">Press kit</a>
+                    <a class="nav-link" href="/presskit.html">Contact / Press kit</a>
                 </li>
             </ul>
         </div>
@@ -190,31 +175,6 @@
     <!-- .navbar -->
 <hr /><hr /><hr /><hr /><hr />
     <!-- Press kit Section -->
-    <style>
-        #presskit { display: block; }
-        #presskit .pk-wrap { max-width: 880px; }
-        #presskit .pk-block {
-            background: rgba(0, 0, 0, .72);
-            border: 1px solid #2a1d38;
-            padding: 24px 16px;
-            margin: 0 0 16px;
-        }
-        #presskit h1 { letter-spacing: .12em; text-transform: uppercase; margin: 8px 0 0; }
-        #presskit .pk-tagline { color: #c58cff; letter-spacing: .08em; text-transform: uppercase; }
-        #presskit h2 { font-size: 1.1rem; letter-spacing: .14em; text-transform: uppercase; color: #c58cff; margin: 0 0 16px; }
-        #presskit h2 span, #presskit .en { color: #a99bb8; font-weight: 400; }
-        #presskit .pk-video { position: relative; aspect-ratio: 16 / 9; }
-        #presskit .pk-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-        #presskit .pk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-        #presskit .pk-card { border: 1px solid #2a1d38; padding: 16px; }
-        #presskit .pk-card h3 { font-size: 1.05rem; margin: 0 0 4px; }
-        #presskit .pk-card p { margin: 0; font-size: .95rem; }
-        #presskit ul.pk-list { list-style: none; margin: 0; padding: 0; }
-        #presskit ul.pk-list li { padding: 6px 0; border-bottom: 1px solid #2a1d38; }
-        #presskit ul.pk-list li:last-child { border-bottom: 0; }
-        #presskit time { color: #c58cff; margin-right: 12px; }
-        #presskit .pk-mail { font-size: 1.3rem; }
-    </style>
     <section id="presskit">
         <div class="container pk-wrap">
 
@@ -224,11 +184,11 @@
                 <p class="pk-tagline">Electro-Fusion Visual Experience</p>
             </div>
 
-            <!-- Video: replace VIDEO_ID with a 60–90 s clip of the live AV set (room and crowd in shot). -->
+            <!-- Video: 60–90 s clip of the live AV set. -->
             <div class="pk-block">
                 <h2>Live <span>/ vidéo</span></h2>
                 <div class="pk-video">
-                    <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Batchass live"
+                    <iframe src="https://www.youtube-nocookie.com/embed/c15e5ppUu7Q" title="Batchass live"
                         allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -321,9 +281,10 @@
                 </p>
             </div>
 
-            <div class="pk-block">
+            <div class="pk-block" id="contact">
                 <h2>Contact <span>/ booking</span></h2>
-                <!-- Address assembled by script, away from scrapers; same text as contact.html without JS. -->
+                <p>A bientôt pour du LIVE très LIVE…</p>
+                <!-- Address assembled by script, away from scrapers. -->
                 <p class="pk-mail" id="pk-mail"><noscript>Bruce [at] batchass.fr</noscript></p>
                 <p class="en">Logo, photos HD et vidéos sur demande.<br>HD logo, photos and videos on request.</p>
             </div>
